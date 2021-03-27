@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+:root {
+  --italiannoStyle: 'Italianno', cursive;
+}
+
+
+body {
+  background-color: black;
+  margin: 0px;
+  font-family: Merriweather;
+  font-style: italic;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+}
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  /* width: 100%; */
+  background-color:transparent;
+  position: fixed;
+  z-index: 1;
+}
+li {
+  float: left;
+}
+li a {
+  color: rgb(202, 219, 235);
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 8px;
+  font-size: 1.3vw;
+  font-family: Merriweather;
+  font-style: italic;
+  
+}
+
+/* li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(74, 129, 180);
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: relative;
+}
+.dropdown-content a {
+  color: rgb(105, 185, 223);
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  padding: 2px;
+}
+.dropdown-content a:hover {
+  background-color: #f5f6f8;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+} */
+
+#home {
+  background-image: url('flowers.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+  background-position: 100% 5%;
+}
+
+#header {
+  margin-top:0;
+  padding: 0px 20px 0px 20px;
+  color: rgb(202, 219, 235);
+  text-align: center;
+  font-family: Merriweather;
+  font-style: italic;
+  font-size: 5vw;
+  background-color: black;
+  width: 100%;
+}
+
+#typewriter {
+  font-family: var(--italiannoStyle);
+
+  font-size: 6.5vw;
+  color: rgb(202, 219, 235);
+  text-align: center;
+}
+#typewriterAuthor {
+  font-family: var(--italiannoStyle);
+
+  font-size: 4vw;
+  color: rgb(202, 219, 235);
+  text-align: end;
+  padding: 15px;
+}
+#quoteContainer {
+  height: 60px;
+  padding: 200px 20px 0px 20px;
+}
+
+#dotContainer {
+  padding: 100px 50px 80px 50px;
+  text-align: center;
+}
+.dots {
+  margin-bottom: 3%;
+  border-radius: 50%;
+  background-color: rgb(146, 175, 219);
+  background: radial-gradient(white, rgb(146, 175, 219));
+  font-family: Merriweather;
+  font-style: italic;
+  font-size: 12px;
+  text-shadow: 2px 2px 5px rgb(48, 33, 33);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+#aboutMe {
+  animation-delay: 6s;
+  animation-name: mymove;
+  animation-duration: 6s;
+}
+
+#whyIApplied {
+  margin-left: 100px;
+}
+
+#fun {
+  animation-delay: 6s;
+  animation-name: mymove;
+  animation-duration: 6s;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  50% {
+    left: 100px;
+  }
+  to {
+    left: 0px;
+  }
+}
+#secondpage {
+  background-image: linear-gradient(
+    rgb(1, 41, 86),
+    rgb(217, 233, 247),
+    rgb(1, 41, 86)
+  );
+ 
+}
+#photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* max-width: 70%;
+  height: auto; */
+  padding-top: 8%;
+  /* float: left;  */
+}
+
+
+/* .here {
+ 
+  text-align: center;
+  font-family: Merriweather;
+  font-style: italic;
+  font-size: clamp(1rem, 8vw, 3.5rem);
+  color: rgb(202, 219, 235);
+  text-shadow: 2px 2px 5px rgb(26, 26, 27);
+  padding: 5%;
+  margin: 0px;
+} */
+.aboutmyself {
+  padding:5%;
+  margin: 0px;
+  text-align: center;
+  font-size: clamp(1rem, 4vw, 2.8rem);
+}
+#motivations{
+  margin:0;
+  padding-bottom: 5%;
+  padding-left:7%;
+  padding-right:7%
+}
+.fa-angle-double-right {
+  margin-top: 4%;
+  color: rgb(56, 10, 141);
+  margin-left: 48%;
+  margin-right: -50%;
+  font-size: clamp(1rem, 4vw, 3rem);
+}
+.fa-angle-double-left {
+  margin-top: 4%;
+  color: rgb(56, 10, 141);
+  margin-left: 50%;
+  margin-right: 50%;
+  font-size: clamp(1rem, 4vw, 3rem);
+}
+
+#pozzuoli {
+  height: auto;
+  color: rgb(202, 219, 235);
+  display: none;
+}
+#pozzuoli h1 {
+  text-align: center;
+  font-size: clamp(1rem, 8vw, 3.5rem);
+}
+#pozzuolipic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+}
+#aboutPozzuoli {
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#beforeIWas {
+  background-image: radial-gradient(rgb(200, 153, 158), rgb(209, 203, 203));
+ 
+  color: rgb(202, 219, 235);
+  display: block;
+}
+#beforeIWas h1 {
+  margin: 0px;
+  padding: 5% 0 5% 0;
+  text-align: center;
+  font-size: clamp(1rem, 8vw, 3.5rem);
+  color: rgb(119, 119, 95);
+}
+.grid {
+ 
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#reader {
+  margin: 0;
+  justify-self: center;
+  max-width: 50%;
+  overflow: auto;
+}
+#beforeIWas p {
+  margin: 5%;
+  color: rgb(119, 119, 95);
+  text-align: center;
+  font-size: clamp(0.5rem, 4vw, 3rem);
+}
+
+.yesOrNot {
+  font-size: clamp(0.8rem, 2vw, 3rem);
+  color: rgb(119, 119, 95);
+  font-family: Merriweather;
+  font-style: italic;
+  font-weight: bold;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  75% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#LauraSinger {
+ 
+  /* background-image: linear-gradient(
+    to bottom left,
+    rgb(65, 65, 131),
+    rgb(255, 203, 106),
+    rgb(214, 87, 28),
+    orange,
+    rgb(65, 65, 131)
+  ); */
+  height: auto;
+  color: rgb(78, 75, 75);
+  display: none;
+}
+#photoandparag {
+  padding-top: 10%;
+}
+
+
+ #singer {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+ /* max-width: 70%;*/
+  /* border-radius: 10%; */
+} 
+#singer, #photo{
+  width:100%;
+  object-fit: contain;
+}
+#angle3 {
+  margin-top: 8%;
+}
+#LauraSinger p {
+  margin-top: 8%;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: rgb(67, 67, 68);
+  text-align: justify;
+}
+#song {
+  /* display: block;
+  /* margin-right: auto;
+  margin-left: auto;
+   /* margin: 2% auto;  */
+   padding-bottom:10%;
+}
+h6 {
+  text-align: center;
+  margin: 10px;
+  color: rgb(67, 67, 68);
+}
+audio {
+  margin-top: 2%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  max-width: 200px;
+  margin-bottom: 2%;
+}
+#thirdpage {
+  /* background-image: radial-gradient(
+    /* rgba(106, 202, 209, 0.911),
+    rgb(86, 180, 218),
+    rgb(61, 132, 199),
+    rgb(89, 104, 190),
+    rgb(128, 89, 190),
+    rgb(161, 89, 190) 
+  );*/
+  padding:5%;
+} 
+
+#thirdpage h1 {
+  text-align: center;
+  font-family: Merriweather;
+  font-style: italic;
+  color: rgb(209, 28, 155);
+  text-shadow: 2px 2px 5px rgb(48, 33, 33);
+  margin: 0px;
+  padding: 5%;
+}
+#thirdpage p {
+  /* margin: 0px;
+  padding: 10%; */
+}
+
+#fourthpage {
+  background-image: radial-gradient(
+/*     
+    rgb(1, 41, 86),
+    rgb(217, 233, 247),
+    rgb(1, 41, 86) */
+  
+    /* rgb(214, 110, 192), */
+    rgb(59, 123, 207),
+    rgb(22, 24, 22)
+  );
+  background-size: 100%;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  /* padding:20px 0 20px 0; */
+}
+#game {
+  background-color: transparent;
+  width: 100%;
+  border: 15px solid #659dbd;
+  border-style: double;
+  padding: 5%;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.hangman {
+  font-family: Merriweather;
+  font-style: italic;
+  text-align: center;
+  color: rgb(12, 12, 15);
+  /* font-weight: bold; */
+  /* color: rgb(102, 162, 218); */
+  /* -webkit-text-stroke: 1px rgb(33, 33, 109);  */
+  text-shadow: 2px 2px 5px rgb(168, 154, 154);
+  margin: 0px;
+  padding: 10px;
+}
+#guessed {
+  font-family: Merriweather;
+  font-style: italic;
+  font-size: clamp(1rem, 8vw, 3.5rem);
+  text-align: center;
+  letter-spacing: 3px;
+  padding: 10px;
+  display: inline-block;
+}
+#hangmanForm {
+  margin-top: 20px;
+}
+#enterALetter {
+  text-align: center;
+  border: 5px solid;
+  border-image: linear-gradient(rgb(59, 123, 207), rgb(214, 110, 192)) 7;
+  height: 48px;
+}
+#guess {
+  border: 5px solid;
+  border-image: linear-gradient(rgb(59, 123, 207), rgb(214, 110, 192)) 7;
+  height: 60px;
+}
+#error {
+  font-family: Merriweather;
+  font-style: italic;
+  text-align: center;
+  color: rgb(22, 50, 211);
+}
+#attemptsLeft {
+  font-family: Merriweather;
+  font-style: italic;
+  text-align: center;
+  font-size: 20px;
+  margin: 0px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: black;
+  margin: 20px;
+}
+
+@media (min-width: 500px) {
+  .dots {
+    margin-bottom: 3%;
+    width: clamp(3rem, 8vw, 10rem);
+    height: clamp(3rem, 8vw, 10rem);
+    border-radius: 50%;
+    font-size: clamp(0.5rem, 1vw, 3rem);
+  }
+  #header {
+    font-size: 4.5vw;
+  }
+  #typewriter {
+    font-size: 5vw;
+  }
+  #typewriterAuthor {
+    font-size: 3vw;
+    text-align: center;
+  }
+  #quoteContainer {
+    height: 100px;
+    padding: 100px 20px 0px 20px;
+  }
+  #dotContainer {
+    padding: 5% 10% 5% 7%;
+    text-align: center;
+  }
+ 
+  #photo, #singer {
+    width: 450px;
+    margin-top: 3px;
+  }
+  .dropdown-content a {
+    font-size: 15px;
+  }
+  #pozzuolipic {
+    max-width: 50%;
+  }
+  .motivations{
+    padding: 2% 5% 2% 5%;
+  }
+
+  #LauraSinger {
+    overflow: auto;
+  }
+  /* #singer {
+    /* max-width: 50%; 
+    margin: 0 3% 2% 3%;
+    float: left;
+  } */
+  #LauraSinger p {
+    margin-top: 0px;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  #song {
+    overflow: auto; /*Block Formatting Context (BFC)  */
+  }
+  #angle3 {
+    display: none;
+  }
+ 
+  
+  #angle3bis {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
+@media (min-width: 700px) {
+  .grid {
+    padding-bottom: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #reader {
+    min-width: 300px;
+    max-width: 60%;
+  }
+  .here {
+    padding: 3%;
+  }
+}
+@media (min-width: 900px) {
+  #singer {
+    margin: 0 3% 2% 3%;
+    float: left;
+  } 
+}
+@media (max-width: 570px) {
+  .singertext{
+    margin-top:5%;
+  }
+  li a {
+    font-size: 8px;
+    padding: 14px 5px;
+  }
+  .dots {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 9px;
+  }
+  audio{
+   padding-bottom:2%;
+  }
+  #game{
+    margin-top: -1.9%;
+  }
+}
