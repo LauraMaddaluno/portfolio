@@ -85,10 +85,8 @@ function finishGame(result) {
   document.getElementById('enterALetter').disabled = true
 }
 
-
 document.getElementById('yes').onclick = function () {
     document.getElementById('yes').style.display = 'none'
-  
     document.getElementById('not').style.animation = 'animate 3s ease'
   }
   let not = document.getElementById('not')
@@ -96,10 +94,26 @@ document.getElementById('yes').onclick = function () {
   function show3() {
     LauraSinger.style.display = 'block'
     beforeIWas.style.display = 'none'
-    
   }
   
   not.addEventListener('click', show3)
  
+  // document.getElementById('burgers-cont').onclick = function () {
+  // document.getElementById('home').style.display = 'none'
+  // document.getElementById('secondpage').style.display = 'none'
+  // document.getElementById('thirdpage').style.display = 'none'
+  // document.getElementById('fourthpage').style.display = 'none'
+  // document.getElementById('footer').style.display = 'none'
+  
+  // document.getElementById('window-container').style.display = 'block'
+  // }
 
+  // document.getElementById('contact').onclick = function () {
+  //   document.getElementById('window-container').style.display = 'none'
+  //   document.getElementById('contacts').style.display = 'block'
+  // }
 
+  document.getElementById('backReader').onclick = function () {
+    LauraSinger.style.display = 'none'
+    beforeIWas.style.display = "block"
+  }

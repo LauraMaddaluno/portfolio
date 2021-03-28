@@ -2,7 +2,10 @@
 :root {
   --italiannoStyle: 'Italianno', cursive;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background-color: black;
@@ -11,20 +14,68 @@ body {
   font-style: italic;
   font-size: clamp(1rem, 4vw, 1.5rem);
 }
-ul {
+/* ul {
   list-style-type: none;
   overflow: hidden;
   padding: 0px;
   margin: 0px;
-  /* width: 100%; */
+  width: 100%; 
   background-color:transparent;
   position: fixed;
   z-index: 1;
-}
-li {
+} */
+/* .back-to-top {
   float: left;
+  /* background-color: black; 
+  color: rgb(202, 219, 235);  
+  text-align: center;
+  padding: 5px;
+  font-size: 1.1vw;
+  font-family: Merriweather;
+  font-style: italic;
+  position: fixed; 
+  display: block;
+  z-index: 1;
+  background-color: rgb(146, 175, 219); 
+  background: radial-gradient(white, rgb(146, 175, 219));
+  border: transparent;
+} */
+#arrow-up-container{
+  margin:5px;
+  right: 0px; 
+  position:fixed;
+  display: block;
 }
-li a {
+#arrow{
+  font-size:1.5em;
+  border-radius: 50%;
+  background: radial-gradient(white, rgb(146, 175, 219));
+}
+#window-container{
+  background-color: rgb(161, 46, 46);
+  width: 30%;
+  height: 30%;
+  margin:auto;
+  display:none; 
+}
+.window{
+  font-size: clamp(1rem, 8vw, 3.5rem);
+  font-family: Merriweather;
+  font-style: italic;
+  text-align: center;
+  background: radial-gradient(white, rgb(146, 175, 219));
+  border: none;
+  width: 100%;
+  height: 100%;
+  margin-top:35%;
+}
+#contacts{
+  display:none;
+  background-color:rgb(238 238 239);
+  
+}
+
+/* li a {
   color: rgb(202, 219, 235);
   display: inline-block;
   text-decoration: none;
@@ -34,7 +85,7 @@ li a {
   font-family: Merriweather;
   font-style: italic;
   
-}
+} */
 
 /* li a:hover,
 .dropdown:hover .dropbtn {
@@ -71,7 +122,7 @@ li.dropdown {
 
 #header {
   margin-top:0;
-  padding: 0px 20px 0px 20px;
+  /* padding: 0px 20px 0px 20px; */
   color: rgb(202, 219, 235);
   text-align: center;
   font-family: Merriweather;
@@ -79,6 +130,7 @@ li.dropdown {
   font-size: 5vw;
   background-color: black;
   width: 100%;
+  
 }
 
 #typewriter {
@@ -229,10 +281,11 @@ a {
   margin-right: 50px;
 }
 #beforeIWas {
-  background-image: radial-gradient(rgb(200, 153, 158), rgb(209, 203, 203));
- 
+   background-image: radial-gradient(rgb(200, 153, 158), rgb(209, 203, 203)); 
+  /* background-image:radial-gradient(black, rgb(78, 73, 73)); */
   color: rgb(202, 219, 235);
   display: block;
+  padding:0 8%;
 }
 #beforeIWas h1 {
   margin: 0px;
@@ -242,7 +295,7 @@ a {
   color: rgb(119, 119, 95);
 }
 .grid {
- 
+  padding:5%;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -253,7 +306,7 @@ a {
   overflow: auto;
 }
 #beforeIWas p {
-  margin: 5%;
+  
   color: rgb(119, 119, 95);
   text-align: center;
   font-size: clamp(0.5rem, 4vw, 3rem);
@@ -265,6 +318,17 @@ a {
   font-family: Merriweather;
   font-style: italic;
   font-weight: bold;
+}
+#backReader{
+  font-family: Merriweather;
+  font-style: italic;
+  /* font-weight: bold; */
+  font-size: clamp(0.8rem, 2vw, 1rem);;
+  color: rgb(78, 75, 75);
+  border-radius: 5%;
+  background: radial-gradient(white, rgb(146, 175, 219));
+  width:60px;
+  margin-bottom:2%;
 }
 
 @keyframes animate {
@@ -321,7 +385,7 @@ a {
   margin-top: 8%;
   margin-left: 50px;
   margin-right: 50px;
-  color: rgb(67, 67, 68);
+  color: rgb(202, 219, 235);
   text-align: justify;
 }
 #song {
@@ -334,7 +398,7 @@ a {
 h6 {
   text-align: center;
   margin: 10px;
-  color: rgb(67, 67, 68);
+  color:rgb(202, 219, 235);;
 }
 audio {
   margin-top: 2%;
@@ -354,14 +418,15 @@ audio {
     rgb(128, 89, 190),
     rgb(161, 89, 190) 
   );*/
-  padding:5%;
+  /* padding:5%; */
 } 
 
 #thirdpage h1 {
   text-align: center;
   font-family: Merriweather;
   font-style: italic;
-  color: rgb(209, 28, 155);
+  color: black;
+  -webkit-text-stroke: 0.5px rgb(196 154 183);
   text-shadow: 2px 2px 5px rgb(48, 33, 33);
   margin: 0px;
   padding: 5%;
@@ -409,6 +474,7 @@ audio {
   text-shadow: 2px 2px 5px rgb(168, 154, 154);
   margin: 0px;
   padding: 10px;
+  padding-bottom: 13%;
 }
 #guessed {
   font-family: Merriweather;
@@ -425,12 +491,12 @@ audio {
 #enterALetter {
   text-align: center;
   border: 5px solid;
-  border-image: linear-gradient(rgb(59, 123, 207), rgb(214, 110, 192)) 7;
+  border-image: linear-gradient(rgb(59, 123, 207),rgb(106 202 209 / 91%)) 7;
   height: 48px;
 }
 #guess {
   border: 5px solid;
-  border-image: linear-gradient(rgb(59, 123, 207), rgb(214, 110, 192)) 7;
+  border-image: linear-gradient(rgb(59, 123, 207),rgb(106 202 209 / 91%)) 7;;
   height: 60px;
 }
 #error {
@@ -498,6 +564,7 @@ footer {
 
   #LauraSinger {
     overflow: auto;
+    padding:5%;
   }
   /* #singer {
     /* max-width: 50%; 
@@ -542,10 +609,13 @@ footer {
     float: left;
   } 
 }
-@media (max-width: 570px) {
-  .singertext{
-    margin-top:5%;
+@media (max-width: 899px) and (min-width: 501px){
+  p.singertext{
+    padding-top:5%;
   }
+}
+@media (max-width: 570px) {
+  
   li a {
     font-size: 8px;
     padding: 14px 5px;
