@@ -154,8 +154,10 @@ li.dropdown {
 }
 
 #dotContainer {
-  padding: 100px 50px 80px 50px;
+  /* padding: 100px 50px 80px 50px; */
+  padding: 15%;
   text-align: center;
+
 }
 .dots {
   margin-bottom: 3%;
@@ -166,25 +168,29 @@ li.dropdown {
   font-style: italic;
   font-size: 12px;
   text-shadow: 2px 2px 5px rgb(48, 33, 33);
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   display: flex;
-  position: relative;
+  position: relative; 
+ 
 }
 #aboutMe {
   animation-delay: 6s;
-  animation-name: mymove;
-  animation-duration: 6s;
+ 
+}
+#didBefore {
+  animation-delay: 6.5s;
+}
+#portfolio{
+  animation-delay: 7s;
+}
+#fun{
+  animation-delay: 7.5s;
 }
 
-#whyIApplied {
-  margin-left: 100px;
-}
-
-#fun {
-  animation-delay: 6s;
+#portfolio, #aboutMe, #didBefore, #fun{
   animation-name: mymove;
-  animation-duration: 6s;
+  animation-duration: 4s;
 }
 
 a {
@@ -193,15 +199,16 @@ a {
 }
 @keyframes mymove {
   from {
-    left: 0px;
+    bottom: 0px;
   }
   50% {
-    left: 100px;
+    bottom: 100px;
   }
   to {
-    left: 0px;
+    bottom: 0px;
   }
 }
+
 #secondpage {
   background-image: linear-gradient(
     rgb(1, 41, 86),
@@ -285,7 +292,7 @@ a {
   /* background-image:radial-gradient(black, rgb(78, 73, 73)); */
   color: rgb(202, 219, 235);
   display: block;
-  padding:0 8%;
+  padding:5% 8%;
 }
 #beforeIWas h1 {
   margin: 0px;
@@ -306,7 +313,7 @@ a {
   overflow: auto;
 }
 #beforeIWas p {
-  
+  padding-top: 10%;
   color: rgb(119, 119, 95);
   text-align: center;
   font-size: clamp(0.5rem, 4vw, 3rem);
@@ -393,7 +400,7 @@ a {
   /* margin-right: auto;
   margin-left: auto;
    /* margin: 2% auto;  */
-   padding-bottom:10%;
+   padding:10% 0px;
 }
 h6 {
   text-align: center;
@@ -519,13 +526,22 @@ footer {
   padding: 5px;
   background-color: black;
   margin: 20px;
+  display:flex; 
+  justify-content: space-around;
+}
+#email{
+  
+  font-family: Merriweather;
+  font-style: italic;
+  text-align: center;
+  color:rgb(202, 219, 235);
 }
 
 @media (min-width: 500px) {
   .dots {
     margin-bottom: 3%;
-    width: clamp(3rem, 8vw, 10rem);
-    height: clamp(3rem, 8vw, 10rem);
+    width:clamp(6rem, 2vw, 15rem);
+    height: clamp(6rem, 2vw, 15rem);
     border-radius: 50%;
     font-size: clamp(0.5rem, 1vw, 3rem);
   }
@@ -544,8 +560,10 @@ footer {
     padding: 100px 20px 0px 20px;
   }
   #dotContainer {
-    padding: 5% 10% 5% 7%;
+    padding: 25% 35% 15% 5%;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
   }
  
   #photo, #singer {
@@ -633,3 +651,24 @@ footer {
     margin-top: -1.9%;
   }
 }
+  @media (max-width: 1000px) and (min-width: 500px){
+    #dotContainer {
+      padding: 25% 15% 45% 5%;
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+    }
+  } 
+  @media(max-width: 499px){
+    @keyframes mymove {
+      from {
+        left: 0px;
+      }
+      50% {
+        left: 100px;
+      }
+      to {
+        left: 0px;
+      }
+    }
+  }
