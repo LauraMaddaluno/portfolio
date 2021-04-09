@@ -55,7 +55,7 @@
 #name{
     font-family: var(--italiannoStyle);
     margin-top: 250px;
-    font-size: clamp(1rem, 4vw, 3.5rem);
+    font-size: clamp(2rem, 4vw, 3.5rem);
     /* color: rgb(202, 219, 235); */ 
     text-align: center;
     background:repeating-linear-gradient(rgb(219, 219, 235), rgb(194, 165, 191),rgb(159, 163, 161), rgb(219, 219, 235));
