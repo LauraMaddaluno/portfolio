@@ -98,20 +98,6 @@ document.getElementById('yes').onclick = function () {
   
   not.addEventListener('click', show3)
  
-  // document.getElementById('burgers-cont').onclick = function () {
-  // document.getElementById('home').style.display = 'none'
-  // document.getElementById('secondpage').style.display = 'none'
-  // document.getElementById('thirdpage').style.display = 'none'
-  // document.getElementById('fourthpage').style.display = 'none'
-  // document.getElementById('footer').style.display = 'none'
-  
-  // document.getElementById('window-container').style.display = 'block'
-  // }
-
-  // document.getElementById('contact').onclick = function () {
-  //   document.getElementById('window-container').style.display = 'none'
-  //   document.getElementById('contacts').style.display = 'block'
-  // }
 
   document.getElementById('backReader').onclick = function () {
     LauraSinger.style.display = 'none'

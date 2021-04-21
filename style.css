@@ -14,32 +14,7 @@ body {
   font-style: italic;
   font-size: clamp(1rem, 4vw, 1.5rem);
 }
-/* ul {
-  list-style-type: none;
-  overflow: hidden;
-  padding: 0px;
-  margin: 0px;
-  width: 100%; 
-  background-color:transparent;
-  position: fixed;
-  z-index: 1;
-} */
-/* .back-to-top {
-  float: left;
-  /* background-color: black; 
-  color: rgb(202, 219, 235);  
-  text-align: center;
-  padding: 5px;
-  font-size: 1.1vw;
-  font-family: Merriweather;
-  font-style: italic;
-  position: fixed; 
-  display: block;
-  z-index: 1;
-  background-color: rgb(146, 175, 219); 
-  background: radial-gradient(white, rgb(146, 175, 219));
-  border: transparent;
-} */
+
 #arrow-up-container{
   margin:5px;
   right: 0px; 
@@ -75,42 +50,7 @@ body {
   
 }
 
-/* li a {
-  color: rgb(202, 219, 235);
-  display: inline-block;
-  text-decoration: none;
-  text-align: center;
-  padding: 14px 8px;
-  font-size: 1.3vw;
-  font-family: Merriweather;
-  font-style: italic;
-  
-} */
 
-/* li a:hover,
-.dropdown:hover .dropbtn {
-  background-color: rgb(74, 129, 180);
-}
-li.dropdown {
-  display: inline-block;
-}
-.dropdown-content {
-  display: none;
-  position: relative;
-}
-.dropdown-content a {
-  color: rgb(105, 185, 223);
-  display: block;
-  text-align: center;
-  font-size: 10px;
-  padding: 2px;
-}
-.dropdown-content a:hover {
-  background-color: #f5f6f8;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-} */
 
 #home {
   background-image: url('flowers.jpg');
@@ -122,7 +62,6 @@ li.dropdown {
 
 #header {
   margin-top:0;
-  /* padding: 0px 20px 0px 20px; */
   color: rgb(202, 219, 235);
   text-align: center;
   font-family: Merriweather;
@@ -154,7 +93,7 @@ li.dropdown {
 }
 
 #dotContainer {
-  /* padding: 100px 50px 80px 50px; */
+ 
   padding: 15%;
   text-align: center;
 
@@ -221,24 +160,8 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* max-width: 70%;
-  height: auto; */
   padding-top: 8%;
-  /* float: left;  */
 }
-
-
-/* .here {
- 
-  text-align: center;
-  font-family: Merriweather;
-  font-style: italic;
-  font-size: clamp(1rem, 8vw, 3.5rem);
-  color: rgb(202, 219, 235);
-  text-shadow: 2px 2px 5px rgb(26, 26, 27);
-  padding: 5%;
-  margin: 0px;
-} */
 .aboutmyself {
   padding:5%;
   margin: 0px;
@@ -289,8 +212,7 @@ a {
   margin-right: 50px;
 }
 #beforeIWas {
-   background-image: radial-gradient(rgb(200, 153, 158), rgb(209, 203, 203)); 
-  /* background-image:radial-gradient(black, rgb(78, 73, 73)); */
+  background-image: radial-gradient(rgb(200, 153, 158), rgb(209, 203, 203)); 
   color: rgb(202, 219, 235);
   display: block;
   padding:5% 8%;
@@ -330,7 +252,6 @@ a {
 #backReader{
   font-family: Merriweather;
   font-style: italic;
-  /* font-weight: bold; */
   font-size: clamp(0.8rem, 2vw, 1rem);;
   color: rgb(78, 75, 75);
   border-radius: 5%;
@@ -357,15 +278,6 @@ a {
   }
 }
 #LauraSinger {
- 
-  /* background-image: linear-gradient(
-    to bottom left,
-    rgb(65, 65, 131),
-    rgb(255, 203, 106),
-    rgb(214, 87, 28),
-    orange,
-    rgb(65, 65, 131)
-  ); */
   height: auto;
   color: rgb(78, 75, 75);
   display: none;
@@ -373,14 +285,10 @@ a {
 #photoandparag {
   padding-top: 10%;
 }
-
-
  #singer {
   display: block;
   margin-right: auto;
   margin-left: auto;
- /* max-width: 70%;*/
-  /* border-radius: 10%; */
 } 
 #singer, #photo{
   width:100%;
@@ -397,10 +305,6 @@ a {
   text-align: justify;
 }
 #song {
-  /* display: block;
-  /* margin-right: auto;
-  margin-left: auto;
-   /* margin: 2% auto;  */
    padding:10% 0px;
 }
 h6 {
@@ -417,17 +321,7 @@ audio {
   max-width: 200px;
   margin-bottom: 2%;
 }
-#thirdpage {
-  /* background-image: radial-gradient(
-    /* rgba(106, 202, 209, 0.911),
-    rgb(86, 180, 218),
-    rgb(61, 132, 199),
-    rgb(89, 104, 190),
-    rgb(128, 89, 190),
-    rgb(161, 89, 190) 
-  );*/
-  /* padding:5%; */
-} 
+
 
 #thirdpage h1 {
   text-align: center;
@@ -439,19 +333,10 @@ audio {
   margin: 0px;
   padding: 5%;
 }
-#thirdpage p {
-  /* margin: 0px;
-  padding: 10%; */
-}
+
 
 #fourthpage {
   background-image: radial-gradient(
-/*     
-    rgb(1, 41, 86),
-    rgb(217, 233, 247),
-    rgb(1, 41, 86) */
-  
-    /* rgb(214, 110, 192), */
     rgb(59, 123, 207),
     rgb(22, 24, 22)
   );
@@ -459,7 +344,6 @@ audio {
   text-align: center;
   margin: 0;
   width: 100%;
-  /* padding:20px 0 20px 0; */
 }
 #game {
   background-color: transparent;
@@ -476,9 +360,6 @@ audio {
   font-style: italic;
   text-align: center;
   color: rgb(12, 12, 15);
-  /* font-weight: bold; */
-  /* color: rgb(102, 162, 218); */
-  /* -webkit-text-stroke: 1px rgb(33, 33, 109);  */
   text-shadow: 2px 2px 5px rgb(168, 154, 154);
   margin: 0px;
   padding: 10px;
@@ -535,7 +416,6 @@ footer {
   font-family: Merriweather;
   font-style: italic;
   text-align: center;
-  /* color:rgb(202, 219, 235); */
 }
 
 @media (min-width: 500px) {
@@ -585,11 +465,7 @@ footer {
     overflow: auto;
     padding:5%;
   }
-  /* #singer {
-    /* max-width: 50%; 
-    margin: 0 3% 2% 3%;
-    float: left;
-  } */
+  
   #LauraSinger p {
     margin-top: 0px;
     margin-left: 3%;
