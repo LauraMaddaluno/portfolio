@@ -407,7 +407,7 @@ footer {
   text-align: center;
   padding: 5px;
   background-color:whitesmoke;
-  margin: 20px;
+  margin: 10px;
   display:flex; 
   justify-content: space-around;
   flex-wrap: wrap;
@@ -454,9 +454,7 @@ footer {
   .dropdown-content a {
     font-size: 15px;
   }
-  #pozzuolipic {
-    max-width: 50%;
-  }
+  
   .motivations{
     padding: 2% 5% 2% 5%;
   }
@@ -477,15 +475,7 @@ footer {
   #song {
     overflow: auto; /*Block Formatting Context (BFC)  */
   }
-  #angle3 {
-    display: none;
-  }
- 
   
-  #angle3bis {
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
 }
 @media (min-width: 700px) {
   .grid {
