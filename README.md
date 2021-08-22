@@ -10,4 +10,4 @@ I created this web page to apply what I have learned during my self-taught study
 
 ## How to use it
 
-just click [here](lauramaddaluno.github.io/portfolio/)
+just click [here](https://lauramaddaluno.github.io/portfolio/)
